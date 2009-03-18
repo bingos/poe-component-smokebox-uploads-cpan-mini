@@ -1,0 +1,14 @@
+use 5.006;
+use strict;
+use inc::Module::Install;
+name 'POE-Component-SmokeBox-Uploads-CPAN-Mini';
+author 'Chris Williams <chris@bingosnet.co.uk>';
+license 'perl';
+perl_version '5.006';
+version_from 'lib/POE/Component/SmokeBox/Uploads/CPAN/Mini.pm';
+abstract_from 'lib/POE/Component/SmokeBox/Uploads/CPAN/Mini.pm';
+build_requires 'Test::More' => 0.47;
+requires 'POE' => 0.38;
+requires 'CPAN::Mini' => 0.571;
+requires 'CPAN::Mini::Devel' => 0.02;
+WriteAll();
