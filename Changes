@@ -1,5 +1,8 @@
 POE::Component::SmokeBox::Uploads::CPAN::Mini
 =============================================
 
+1.00	Fri Jun  5 23:28:25 BST 2009
+	- Update Makefile.PL meta
+
 0.02	
 	- Initial CPAN release

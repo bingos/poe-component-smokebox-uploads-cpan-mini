@@ -7,7 +7,7 @@ use Carp;
 use CPAN::Mini;
 use vars qw($VERSION);
 
-$VERSION = '0.02';
+$VERSION = '1.00';
 
 sub spawn {
   my $package = shift;
@@ -201,7 +201,7 @@ The component uses L<POE::Wheel::Run> to run L<CPAN::Mini>'s C<update_mirror> cl
 
 =over
 
-=item spawn
+=item C<spawn>
 
 Takes a number of parameters:
 
@@ -234,11 +234,11 @@ Returns an object.
 
 =over 
 
-=item session_id
+=item C<session_id>
 
 Returns the POE::Session ID of the component.
 
-=item shutdown
+=item C<shutdown>
 
 Terminates the component.
 
@@ -248,7 +248,7 @@ Terminates the component.
 
 =over 
 
-=item shutdown
+=item C<shutdown>
 
 Terminates the component.
 
@@ -274,7 +274,7 @@ Chris C<BinGOs> Williams <chris@bingosnet.co.uk>
 
 =head1 LICENSE
 
-Copyright (C) Chris Williams
+Copyright E<copy> Chris Williams
 
 This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
