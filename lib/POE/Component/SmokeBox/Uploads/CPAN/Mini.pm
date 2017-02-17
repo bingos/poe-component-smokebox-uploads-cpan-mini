@@ -1,13 +1,12 @@
 package POE::Component::SmokeBox::Uploads::CPAN::Mini;
 
+#ABSTRACT: Obtain uploaded CPAN modules via a CPAN::Mini mirror
+
 use strict;
 use warnings;
 use POE qw(Wheel::Run);
 use Carp;
 use CPAN::Mini;
-use vars qw($VERSION);
-
-$VERSION = '1.00';
 
 sub spawn {
   my $package = shift;
@@ -149,11 +148,8 @@ sub _wheel_stderr {
 }
 
 1;
-__END__
 
-=head1 NAME
-
-POE::Component::SmokeBox::Uploads::CPAN::Mini - Obtain uploaded CPAN modules via a CPAN::Mini mirror
+=pod
 
 =head1 SYNOPSIS
 
@@ -219,7 +215,7 @@ Other L<CPAN::Mini> options may be specified.
   'class', specify the CPAN::Mini class to use, defaults to CPAN::Mini;
   'force', check all directories, even if indices are unchanged, default is true;
   'skip_perl', skip the major language distributions: perl, parrot, and ponier, default false;
-  
+
 There are some debugging options:
 
   'debug', if set to true the component will print output from update_mirror();
@@ -267,16 +263,6 @@ If C<dump> has been set to true in the C<spawn> constructor then these additiona
 
   'buffer', an arrayref containing the STDOUT messages from the update_mirror() call;
   'errors', an arrayref containing the STDERR messages from the update_mirror() call;
-
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams <chris@bingosnet.co.uk>
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
 =head1 SEE ALSO
 
